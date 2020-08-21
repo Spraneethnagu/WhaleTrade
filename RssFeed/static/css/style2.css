@@ -1,0 +1,63 @@
+.roll {
+    margin-bottom: 40px;
+}
+
+.latest-news {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.newsfeed-caption h4 a {
+    color: black;
+}
+
+a.news-link:hover {
+    color: rgb(233, 87, 19);
+}
+
+.card-img-top {
+    margin-bottom: 2%;
+}
+
+.card {
+    margin-bottom: 4%;
+    border: none;
+}
+
+@media(min-width: 1024px) {
+    img.latest-right {
+        width: 150px;
+    }
+    img.latest-bottom {
+        height: 150px;
+    }
+}
+
+.card-body h4 a:hover {
+    color: rgb(233, 87, 19);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+
+/* Handle */
+
+img#telegram-img,
+img#instagram-img {
+    width: 1.8rem;
+}
+
+div.footer-area.footer-padding.fix {
+    padding: 0;
+}
+
+@media(min-width: 768px) {
+    img.card-img-top#feed-img {
+        height: 215px;
+    }
+}
