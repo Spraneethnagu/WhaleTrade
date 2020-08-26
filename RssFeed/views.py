@@ -110,3 +110,124 @@ def index(request):
         'today': today
     }
     return render(request,'index.html',context)
+
+def resources(request):
+    c_wallets=[
+    {'name': "My Ether Wallet"},
+    {'name': "Blockchani Wallet"},
+    {'name': "Cryptonator Online Wallet"},
+    {'name': "Coinbase Wallet"},
+    {'name': "Btc.com Wallet"}
+    
+    ]
+
+    h_wallets=[
+        {'name': "Ledger"},
+        {'name': "Trezor"},
+        {'name': "CoolWallet"},
+        {'name': "BitLox"},
+        {'name': "KeepKey"}
+        
+        ]
+
+    c_gambling = [
+        {'name': "Luckygames.io"},
+        {'name': "bitStarz"},
+        {'name': "Nitrogensports"},
+        {'name': "Primedice"},
+        {'name': "mBit Casino"}
+        
+        
+        ]
+
+    c_exchanges=[
+        {'name': "Binance"},
+        {'name': "Coinbase"},
+        {'name': "BitMEX"},
+        {'name': "Huobi Global"},
+        {'name': "KuCoin"}
+        ]
+
+    l_trading = [
+        {'name': "BitMEX"},
+        {'name': "Huobi Global"},
+        {'name': "Binance"},
+        {'name': "Kraken"},
+        {'name': "Phemex"}
+        ]
+
+    c_forums = [
+        {'name': "Bitcointalk"},
+        {'name': "Bitcoin.com forum"},
+        {'name': "Beermoneyforum"},
+        {'name': "Cryptocurrencytalk"},
+        {'name': "Mastersofcrypto Forum"}
+        ]
+
+    b_mining_software = [
+        {'name': "MinerGate"},
+        {'name': "BTCMiner"},
+        {'name': "RPCminer"},
+        {'name': "GUIMiner"},
+        {'name': "GroupFabric"}
+        ]
+
+    m_pools = [
+        {'name': "F2Pool"},
+        {'name': "Antpool"},
+        {'name': "SlushPool"},
+        {'name': "ViaBTC"},
+        {'name': "Bitminter"}
+        ]
+
+    c_tracking = [
+        {'name': "CoinTracking"},
+        {'name': "coin.fyi"},
+        {'name': "Blox"},
+        {'name': "Altpocket"},
+        {'name': "Blockfolio"}
+        ]
+
+    charting = [
+        {'name': "Coinmarketcap"},
+        {'name': "Investing.com"},
+        {'name': "Tradingview"},
+        {'name': "Etherscan.io"},
+        {'name': "Blockchain"}
+        ]
+
+    u_ico = [
+        {'name': "Fidelityhouse"},
+        {'name': "Membrana"},
+        {'name': "Poof Of Toss"},
+        {'name': "Elrond"},
+        {'name': "Manda"}
+    ]
+
+    airdrops = [
+        {'name': "ICO Drops"},
+        {'name': "Gift.ONE"},
+        {'name': "Airdrop Alert"},
+        {'name': "AirdropBob"},
+        {'name': "Coin Airdrops"}
+        ]
+
+    context={
+        'c_wallets' : c_wallets,
+        'h_wallets' : h_wallets,
+        'c_gambling' : c_gambling,
+        'c_exchanges' : c_exchanges,
+        'l_trading' : l_trading,
+        'c_forums' : c_forums,
+        'b_mining_software' : b_mining_software,
+        'm_pools' : m_pools,
+        'c_tracking' : c_tracking,
+        'charting' : charting,
+        'u_ico' : u_ico,
+        'airdrops' : airdrops
+
+
+        
+    }
+    return render(request,'resources.html',context)
+

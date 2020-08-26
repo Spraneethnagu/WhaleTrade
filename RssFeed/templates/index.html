@@ -29,7 +29,7 @@
                             <!-- Trending Top -->
                             <div class="trending-top mb-30">
                                 <div class="trend-top-img">
-                                    <img src="{{a.img}}" alt="">
+                                    <a href="{{a.link}}"><img src="{{a.img}}" alt=""></a>
                                     <div class="trend-top-cap">
                                         <span>{{a.tag}}</span>
                                         <h2><a target="_blank" href="{{a.link}}">{{a.title}}</a></h2>
@@ -45,7 +45,7 @@
                                     <div class="col-lg-4">
                                         <div class="single-bottom mb-35">
                                             <div class="trend-bottom-img mb-30">
-                                                <img class="latest-bottom" src="{{b.img}}" alt="">
+                                                <a href="{{a.link}}"><img class="latest-bottom" src="{{b.img}}" alt=""></a>
 
                                             </div>
                                             <div class="trend-bottom-cap">
@@ -60,7 +60,7 @@
                                     <div class="col-lg-4">
                                         <div class="single-bottom mb-35">
                                             <div class="trend-bottom-img mb-30">
-                                                <img class="latest-bottom" src="{{c.img}}" alt="">
+                                                <a href="{{a.link}}"><img class="latest-bottom" src="{{c.img}}" alt=""></a>
                                             </div>
                                             <div class="trend-bottom-cap">
                                                 <span class="color2">{{c.tag}}</span>
@@ -76,7 +76,7 @@
                                     <div class="col-lg-4">
                                         <div class="single-bottom mb-35">
                                             <div class="trend-bottom-img mb-30">
-                                                <img class="latest-bottom" src="{{d.img}}" alt="">
+                                                <a href="{{a.link}}"><img class="latest-bottom" src="{{d.img}}" alt=""></a>
                                             </div>
                                             <div class="trend-bottom-cap">
                                                 <span class="color3">{{d.tag}}</span>
@@ -94,7 +94,7 @@
                         <div class="col-lg-4">
                             <div class="trand-right-single d-flex">
                                 <div class="trand-right-img">
-                                    <img class="latest-right" src="{{e.img}}" alt="">
+                                    <a href="{{a.link}}"><img class="latest-right" src="{{e.img}}" alt=""></a>
                                     <p>Share: <a href="https://www.facebook.com/sharer.php?u={{e.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
                                         <a href="https://twitter.com/intent/tweet?url={{e.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
                                         <a href="https://www.linkedin.com/shareArticle?mini=true&url={{e.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
@@ -106,7 +106,7 @@
                             </div>
                             <div class="trand-right-single d-flex">
                                 <div class="trand-right-img">
-                                    <img class="latest-right" src="{{f.img}}" alt="">
+                                    <a href="{{a.link}}"><img class="latest-right" src="{{f.img}}" alt=""></a>
                                     <p>Share: <a href="https://www.facebook.com/sharer.php?u={{f.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
                                         <a href="https://twitter.com/intent/tweet?url={{f.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
                                         <a href="https://www.linkedin.com/shareArticle?mini=true&url={{f.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
@@ -118,7 +118,7 @@
                             </div>
                             <div class="trand-right-single d-flex">
                                 <div class="trand-right-img">
-                                    <img class="latest-right" src="{{g.img}}" alt="">
+                                    <a href="{{a.link}}"><img class="latest-right" src="{{g.img}}" alt=""></a>
                                     <p>Share: <a href="https://www.facebook.com/sharer.php?u={{g.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
                                         <a href="https://twitter.com/intent/tweet?url={{g.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
                                         <a href="https://www.linkedin.com/shareArticle?mini=true&url={{g.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
@@ -130,7 +130,7 @@
                             </div>
                             <div class="trand-right-single d-flex">
                                 <div class="trand-right-img">
-                                    <img class="latest-right" src="{{h.img}}" alt="">
+                                    <a href="{{a.link}}"><img class="latest-right" src="{{h.img}}" alt=""></a>
                                     <p>Share: <a href="https://www.facebook.com/sharer.php?u={{h.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
                                         <a href="https://twitter.com/intent/tweet?url={{h.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
                                         <a href="https://www.linkedin.com/shareArticle?mini=true&url={{h.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
@@ -142,7 +142,7 @@
                             </div>
                             <div class="trand-right-single d-flex">
                                 <div class="trand-right-img">
-                                    <img class="latest-right" src="{{i.img}}" alt="">
+                                    <a href="{{a.link}}"><img class="latest-right" src="{{i.img}}" alt=""></a>
                                     <p>Share: <a href="https://www.facebook.com/sharer.php?u={{i.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
                                         <a href="https://twitter.com/intent/tweet?url={{i.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
                                         <a href="https://www.linkedin.com/shareArticle?mini=true&url={{i.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
@@ -180,10 +180,10 @@
                                             {% for a in l2 %}
                                             <div class="col-12 col-md-4 text-center news-feed-news">
                                                 <div class="card" style="width: 100%">
-                                                    <img class="card-img-top" id="feed-img" src="{{a.img}}" alt="Card image">
+                                                    <a href="{{a.link}}"><img class="card-img-top" id="feed-img" src="{{a.img}}" alt="Card image"></a>
                                                     <div class="card-body">
-                                                        <span class="color3">{{a.tag}}</span>
-                                                        <br><br>
+                                                        
+                                                        <br>
                                                         <p>Share: <a href="https://www.facebook.com/sharer.php?u={{a.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
                                                             <a href="https://twitter.com/intent/tweet?url={{a.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
                                                             <a href="https://www.linkedin.com/shareArticle?mini=true&url={{a.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
