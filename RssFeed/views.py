@@ -19,7 +19,7 @@ def index(request):
     for a in i:
         datetime1= a.published[5:25]
         dict = {
-            'title': a.title,
+            'title': a.title[0:75],
             'img': a.links[1].href,
             'link': a.link,
             'date': a.published[5:16],
@@ -40,7 +40,7 @@ def index(request):
         datetime1= a.published[5:25]
         
         dict={
-            'title': a.title,
+            'title': a.title[0:75],
             'link': a.link,
             'date': a.published[5:16],
                 
@@ -63,7 +63,7 @@ def index(request):
             img = b.feed.img["src"]
             
             dict = {
-                'title': a.title,
+                'title': a.title[0:75],
                 'link': a.link,
                 'date': a.updated[0:10],
                 

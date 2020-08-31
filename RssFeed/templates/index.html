@@ -1,247 +1,245 @@
-{% extends "base.html" %}
-{% load static %}
-    {% block body %}
-    <main>
-        
-        <!-- Trending Area Start -->
-        <div class="trending-area fix">
-            <div class="container">
-                <div class="trending-main">
-                    <!-- Trending Tittle -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="trending-tittle">
-                                <strong>Latest News</strong>
-                                <!-- <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                                <div class="trending-animated">
-                                    <ul id="js-news" class="js-hidden">
-                                        <li class="news-item">{{a.title}}</li>
-                                        <li class="news-item">{{b.title}}</li>
-                                        <li class="news-item">{{c.title}}</li>
-                                    </ul>
-                                </div>
+{% extends "base.html" %} {% load static %} {% block body %}
+<main>
 
+    <!-- Trending Area Start -->
+    <div class="trending-area fix">
+        <div class="container">
+            <div class="trending-main">
+                <!-- Trending Tittle -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="trending-tittle">
+                            <strong>Latest News</strong>
+                            <!-- <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                            <div class="trending-animated">
+                                <ul id="js-news" class="js-hidden">
+                                    <li class="news-item">{{a.title}}</li>
+                                    <li class="news-item">{{b.title}}</li>
+                                    <li class="news-item">{{c.title}}</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <!-- Trending Top -->
+                        <div class="trending-top mb-30">
+                            <div class="trend-top-img">
+                                <a href="{{a.link}}" target="_blank"><img src="{{a.img}}" alt=""></a>
+                                <div class="trend-top-cap">
+                                    <span>{{a.tag}}</span>
+                                    <h2><a target="_blank" href="{{a.link}}">{{a.title}}...(read more)</a></h2>
+                                    <p class="text-white">Share: <a href="https://www.facebook.com/sharer.php?u={{a.link}}"><i class="fab fa-facebook mr-2 ml-2"></i> </a>
+                                        <a href="https://twitter.com/intent/tweet?url={{a.link}}"><i class="fab fa-twitter mr-2"></i> </a>
+                                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{a.link}}"><i class="fab fa-linkedin"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trending Bottom -->
+                        <div class="trending-bottom">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="single-bottom mb-35">
+                                        <div class="trend-bottom-img mb-30">
+                                            <a href="{{b.link}}" target="_blank"><img class="latest-bottom" src="{{b.img}}" alt=""></a>
+
+                                        </div>
+                                        <div class="trend-bottom-cap">
+                                            <span class="color1">{{b.tag}}</span>
+                                            <p>Share: <a href="https://www.facebook.com/sharer.php?u={{b.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
+                                                <a href="https://twitter.com/intent/tweet?url={{b.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
+                                                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{b.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
+                                            <h4><a target="_blank" href="{{b.link}}">{{b.title}}...(read more)</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="single-bottom mb-35">
+                                        <div class="trend-bottom-img mb-30">
+                                            <a href="{{c.link}}" target="_blank"><img class="latest-bottom" src="{{c.img}}" alt=""></a>
+                                        </div>
+                                        <div class="trend-bottom-cap">
+                                            <span class="color2">{{c.tag}}</span>
+                                            <p>Share: <a href="https://www.facebook.com/sharer.php?u={{c.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
+                                                <a href="https://twitter.com/intent/tweet?url={{c.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
+                                                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{c.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
+                                            <h4>
+                                                <h4><a target="_blank" href="{{c.link}}">{{c.title}}...(read more)</a></h4>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="single-bottom mb-35">
+                                        <div class="trend-bottom-img mb-30">
+                                            <a href="{{d.link}}" target="_blank"><img class="latest-bottom" src="{{d.img}}" alt=""></a>
+                                        </div>
+                                        <div class="trend-bottom-cap">
+                                            <span class="color3">{{d.tag}}</span>
+                                            <p>Share: <a href="https://www.facebook.com/sharer.php?u={{d.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
+                                                <a href="https://twitter.com/intent/tweet?url={{d.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
+                                                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{d.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
+                                            <h4><a target="_blank" href="{{d.link}}">{{d.title}}...(read more)</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <!-- Trending Top -->
-                            <div class="trending-top mb-30">
-                                <div class="trend-top-img">
-                                    <a href="{{a.link}}"><img src="{{a.img}}" alt=""></a>
-                                    <div class="trend-top-cap">
-                                        <span>{{a.tag}}</span>
-                                        <h2><a target="_blank" href="{{a.link}}">{{a.title}}</a></h2>
-                                        <p class="text-white">Share: <a href="https://www.facebook.com/sharer.php?u={{a.link}}"><i class="fab fa-facebook mr-2 ml-2"></i> </a>
-                                            <a href="https://twitter.com/intent/tweet?url={{a.link}}"><i class="fab fa-twitter mr-2"></i> </a>
-                                            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{a.link}}"><i class="fab fa-linkedin"></i></a></p>
-                                    </div>
-                                </div>
+                    <!-- Riht content -->
+                    <div class="col-lg-4">
+                        <div class="trand-right-single d-flex">
+                            <div class="trand-right-img">
+                                <a href="{{e.link}}" target="_blank"><img class="latest-right" src="{{e.img}}" alt=""></a>
+                                <p>Share: <a href="https://www.facebook.com/sharer.php?u={{e.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
+                                    <a href="https://twitter.com/intent/tweet?url={{e.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{e.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
                             </div>
-                            <!-- Trending Bottom -->
-                            <div class="trending-bottom">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="single-bottom mb-35">
-                                            <div class="trend-bottom-img mb-30">
-                                                <a href="{{a.link}}"><img class="latest-bottom" src="{{b.img}}" alt=""></a>
-
-                                            </div>
-                                            <div class="trend-bottom-cap">
-                                                <span class="color1">{{b.tag}}</span>
-                                                <p>Share: <a href="https://www.facebook.com/sharer.php?u={{b.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
-                                                    <a href="https://twitter.com/intent/tweet?url={{b.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
-                                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{b.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
-                                                <h4><a target="_blank" href="{{b.link}}">{{b.title}}</a></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="single-bottom mb-35">
-                                            <div class="trend-bottom-img mb-30">
-                                                <a href="{{a.link}}"><img class="latest-bottom" src="{{c.img}}" alt=""></a>
-                                            </div>
-                                            <div class="trend-bottom-cap">
-                                                <span class="color2">{{c.tag}}</span>
-                                                <p>Share: <a href="https://www.facebook.com/sharer.php?u={{c.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
-                                                    <a href="https://twitter.com/intent/tweet?url={{c.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
-                                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{c.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
-                                                <h4>
-                                                    <h4><a target="_blank" href="{{c.link}}">{{c.title}}</a></h4>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="single-bottom mb-35">
-                                            <div class="trend-bottom-img mb-30">
-                                                <a href="{{a.link}}"><img class="latest-bottom" src="{{d.img}}" alt=""></a>
-                                            </div>
-                                            <div class="trend-bottom-cap">
-                                                <span class="color3">{{d.tag}}</span>
-                                                <p>Share: <a href="https://www.facebook.com/sharer.php?u={{d.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
-                                                    <a href="https://twitter.com/intent/tweet?url={{d.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
-                                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{d.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
-                                                <h4><a target="_blank" href="{{d.link}}">{{d.title}}</a></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="trand-right-cap">
+                                <span class="color1">{{e.tag}}</span>
+                                <h4><a target="_blank" href="{{e.link}}">{{e.title}}...(read more)</a></h4>
                             </div>
                         </div>
-                        <!-- Riht content -->
-                        <div class="col-lg-4">
-                            <div class="trand-right-single d-flex">
-                                <div class="trand-right-img">
-                                    <a href="{{a.link}}"><img class="latest-right" src="{{e.img}}" alt=""></a>
-                                    <p>Share: <a href="https://www.facebook.com/sharer.php?u={{e.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
-                                        <a href="https://twitter.com/intent/tweet?url={{e.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
-                                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{e.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
-                                </div>
-                                <div class="trand-right-cap">
-                                    <span class="color1">{{e.tag}}</span>
-                                    <h4><a target="_blank" href="{{e.link}}">{{e.title}}</a></h4>
-                                </div>
+                        <div class="trand-right-single d-flex">
+                            <div class="trand-right-img">
+                                <a href="{{f.link}}" target="_blank"><img class="latest-right" src="{{f.img}}" alt=""></a>
+                                <p>Share: <a href="https://www.facebook.com/sharer.php?u={{f.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
+                                    <a href="https://twitter.com/intent/tweet?url={{f.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{f.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
                             </div>
-                            <div class="trand-right-single d-flex">
-                                <div class="trand-right-img">
-                                    <a href="{{a.link}}"><img class="latest-right" src="{{f.img}}" alt=""></a>
-                                    <p>Share: <a href="https://www.facebook.com/sharer.php?u={{f.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
-                                        <a href="https://twitter.com/intent/tweet?url={{f.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
-                                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{f.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
-                                </div>
-                                <div class="trand-right-cap">
-                                    <span class="color3">{{f.tag}}</span>
-                                    <h4><a target="_blank" href="{{f.link}}">{{f.title}}</a></h4>
-                                </div>
+                            <div class="trand-right-cap">
+                                <span class="color3">{{f.tag}}</span>
+                                <h4><a target="_blank" href="{{f.link}}">{{f.title}}...(read more)</a></h4>
                             </div>
-                            <div class="trand-right-single d-flex">
-                                <div class="trand-right-img">
-                                    <a href="{{a.link}}"><img class="latest-right" src="{{g.img}}" alt=""></a>
-                                    <p>Share: <a href="https://www.facebook.com/sharer.php?u={{g.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
-                                        <a href="https://twitter.com/intent/tweet?url={{g.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
-                                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{g.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
-                                </div>
-                                <div class="trand-right-cap">
-                                    <span class="color2">{{g.tag}}</span>
-                                    <h4><a target="_blank" href="{{g.link}}">{{g.title}}</a></h4>
-                                </div>
+                        </div>
+                        <div class="trand-right-single d-flex">
+                            <div class="trand-right-img">
+                                <a href="{{g.link}}" target="_blank"><img class="latest-right" src="{{g.img}}" alt=""></a>
+                                <p>Share: <a href="https://www.facebook.com/sharer.php?u={{g.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
+                                    <a href="https://twitter.com/intent/tweet?url={{g.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{g.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
                             </div>
-                            <div class="trand-right-single d-flex">
-                                <div class="trand-right-img">
-                                    <a href="{{a.link}}"><img class="latest-right" src="{{h.img}}" alt=""></a>
-                                    <p>Share: <a href="https://www.facebook.com/sharer.php?u={{h.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
-                                        <a href="https://twitter.com/intent/tweet?url={{h.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
-                                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{h.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
-                                </div>
-                                <div class="trand-right-cap">
-                                    <span class="color4">{{h.tag}}</span>
-                                    <h4><a target="_blank" href="{{h.link}}">{{h.title}}</a></h4>
-                                </div>
+                            <div class="trand-right-cap">
+                                <span class="color2">{{g.tag}}</span>
+                                <h4><a target="_blank" href="{{g.link}}">{{g.title}}...(read more)</a></h4>
                             </div>
-                            <div class="trand-right-single d-flex">
-                                <div class="trand-right-img">
-                                    <a href="{{a.link}}"><img class="latest-right" src="{{i.img}}" alt=""></a>
-                                    <p>Share: <a href="https://www.facebook.com/sharer.php?u={{i.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
-                                        <a href="https://twitter.com/intent/tweet?url={{i.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
-                                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{i.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
-                                </div>
-                                <div class="trand-right-cap">
-                                    <span class="color1">{{i.tag}}</span>
-                                    <h4><a target="_blank" href="{{i.link}}">{{i.title}}</a></h4>
-                                </div>
+                        </div>
+                        <div class="trand-right-single d-flex">
+                            <div class="trand-right-img">
+                                <a href="{{h.link}}" target="_blank"><img class="latest-right" src="{{h.img}}" alt=""></a>
+                                <p>Share: <a href="https://www.facebook.com/sharer.php?u={{h.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
+                                    <a href="https://twitter.com/intent/tweet?url={{h.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{h.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
+                            </div>
+                            <div class="trand-right-cap">
+                                <span class="color4">{{h.tag}}</span>
+                                <h4><a target="_blank" href="{{h.link}}">{{h.title}}...(read more)</a></h4>
+                            </div>
+                        </div>
+                        <div class="trand-right-single d-flex">
+                            <div class="trand-right-img">
+                                <a href="{{i.link}}" target="_blank"><img class="latest-right" src="{{i.img}}" alt=""></a>
+                                <p>Share: <a href="https://www.facebook.com/sharer.php?u={{i.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
+                                    <a href="https://twitter.com/intent/tweet?url={{i.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{i.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
+                            </div>
+                            <div class="trand-right-cap">
+                                <span class="color1">{{i.tag}}</span>
+                                <h4><a target="_blank" href="{{i.link}}">{{i.title}}...(read more)</a></h4>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Trending Area End -->
+    </div>
+    <!-- Trending Area End -->
 
 
-        <!-- Whats New Start -->
-        <section class="whats-news-area pt-50 pb-20">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
+    <!-- Whats New Start -->
+    <section class="whats-news-area pt-50 pb-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
 
-                        <div class="row">
-                            <div class="col-12 roll">
-                                <!-- Nav Card -->
-                                <div class="tab-content" id="nav-tabContent">
-                                    <!-- card one -->
-                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                        <div class="mb-30" id="news-feed">
-                                            <h3>News Feed</h3>
-                                        </div>
-                                        <div class="row">
+                    <div class="row">
+                        <div class="col-12 roll">
+                            <!-- Nav Card -->
+                            <div class="tab-content" id="nav-tabContent">
+                                <!-- card one -->
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <div class="mb-30" id="news-feed">
+                                        <div class="trending-tittle"><strong>News Feed</strong></div>
+                                    </div>
+                                    <div class="row">
 
-                                            {% for a in l2 %}
-                                            <div class="col-12 col-md-4 text-center news-feed-news">
-                                                <div class="card" style="width: 100%">
-                                                    <a href="{{a.link}}"><img class="card-img-top" id="feed-img" src="{{a.img}}" alt="Card image"></a>
-                                                    <div class="card-body">
-                                                        
-                                                        <br>
-                                                        <p>Share: <a href="https://www.facebook.com/sharer.php?u={{a.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
-                                                            <a href="https://twitter.com/intent/tweet?url={{a.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
-                                                            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{a.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
+                                        {% for a in l2 %}
+                                        <div class="col-12 col-md-4 text-center news-feed-news">
+                                            <div class="card" style="width: 100%">
+                                                <a href="{{a.link}}" target="_blank"><img class="card-img-top" id="feed-img" src="{{a.img}}" alt="Card image"></a>
+                                                <div class="card-body">
+                                                    <span class="color3 tag">{{a.tag}}</span>
+                                                    <br>
+                                                    <p>Share: <a href="https://www.facebook.com/sharer.php?u={{a.link}}"><i class="fab fa-facebook text-dark mr-2 ml-2"></i> </a>
+                                                        <a href="https://twitter.com/intent/tweet?url={{a.link}}"><i class="fab fa-twitter text-dark mr-2"></i> </a>
+                                                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{a.link}}"><i class="fab fa-linkedin text-dark"></i></a></p>
 
-                                                        <h4 class="card-title"><a target="_blank" href="{{a.link}}">{{a.title}}</a></h4>
+                                                    <h4 class="card-title text-left"><a target="_blank" href="{{a.link}}">{{a.title}}...(read more)</a></h4>
 
 
-                                                    </div>
                                                 </div>
-
                                             </div>
-                                            {% endfor %}
 
                                         </div>
-
+                                        {% endfor %}
 
                                     </div>
-                                    <!-- End Nav Card -->
+
+
                                 </div>
+                                <!-- End Nav Card -->
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-3">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle mb-40">
-                            <h3>Follow Us</h3>
-                        </div>
-                        <!-- Flow Socail -->
-                        <div class="instagram-follow mb-2">
-                            <a href="https://www.instagram.com/whale_trades/"><img class="mr-2" id="instagram-img" src="{% static '/img/news/instagram.png'%}"> <span class="text-dark">Instagram</span></a>
-                        </div>
-                        <div class="twitter-follow mb-2">
-                            <a href="https://twitter.com/trades_whale"><img class="mr-2" id="twitter-img" src="{% static '/img/news/icon-tw.png'%}"> <span class="text-dark">Twitter</span></a>
-                        </div>
-                        <div class="telegram-follow">
-                            <a href="http://t.me/whaletradesofficial"><img class="mr-2" id="telegram-img" src="{% static '/img/news/telegram.png'%}"> <span class="text-dark">Telegram</span></a>
-                        </div>
-                        <!-- New Poster -->
-                        <div class="news-poster d-none d-lg-block">
-                            <img src="assets/img/news/news_card.jpg" alt="">
-                        </div>
+                <div class="col-lg-3">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle mb-40">
+                        <div class="trending-tittle"><strong>Follow Us</strong></div>
+                    </div>
+                    <!-- Flow Socail -->
+                    <div class="instagram-follow mb-2">
+                        <a href="https://www.instagram.com/whale_trades/"><img class="mr-2" id="instagram-img" src="{% static '/img/news/instagram.png'%}"> <span class="text-dark">Instagram</span></a>
+                    </div>
+                    <div class="twitter-follow mb-2">
+                        <a href="https://twitter.com/trades_whale"><img class="mr-2" id="twitter-img" src="{% static '/img/news/icon-tw.png'%}"> <span class="text-dark">Twitter</span></a>
+                    </div>
+                    <div class="telegram-follow">
+                        <a href="http://t.me/whaletradesofficial"><img class="mr-2" id="telegram-img" src="{% static '/img/news/telegram.png'%}"> <span class="text-dark">Telegram</span></a>
+                    </div>
+                    <!-- New Poster -->
+                    <div class="news-poster d-none d-lg-block">
+                        <img src="assets/img/news/news_card.jpg" alt="">
                     </div>
                 </div>
             </div>
+        </div>
 
 
-        </section>
-        <!-- Whats New End -->
+    </section>
+    <!-- Whats New End -->
 
-        <!-- News Feed Start-->
-
-
-
-        <!-- News Feed End -->
+    <!-- News Feed Start-->
 
 
-    </main>
+
+    <!-- News Feed End -->
+
+
+</main>
 
 
 
