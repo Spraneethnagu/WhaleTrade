@@ -6,8 +6,8 @@
     font-family: 'Roboto';
 }
 
-h1.res-h1 {
-    background-color: #000000;
+h3.res-h1 {
+    background-color: #e82020;
     color: white;
     padding: 10px 20px;
     margin: 0;
@@ -29,7 +29,7 @@ ul.res-ul li {
 }
 
 .body1 {
-    background: rgb(221, 210, 210);
+    background: rgb(255, 255, 255);
     padding-bottom: 20px;
 }
 
