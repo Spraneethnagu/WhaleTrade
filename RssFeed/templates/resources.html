@@ -2,212 +2,246 @@
 
 
 <div class="body1">
-          <div class="row text-center" >
+    <div class="row text-center">
 
-    <div class="container">
-
-
-
-
-        <div id="resource-head" class="text-center pt-4 mb-3">
-            <h1>Cryptocurrency Resources</h1>
-            <p class="float-left bit-img-cls"><img class="bitcoin-img" src="{% static '/img/news/bitcoin.png' %}"></p>
-            <p>Let me help you save your precious time. I've been actively collecting and researching the best cryptocurrency sites for the last few years. From my 9-year crypto involvement, I know that finding the most valuable crypto links (sites) can
-                be very difficult, and It doesn't matter if you are a day trader, miner, or just an experienced beginner, trying to start with cryptocurrencies. The best collection of crypto sites will remain 100% free-to-use and with zero ads.</p>
-        </div>
+        <div class="container">
 
 
 
 
-      <!--ROW ONE-->
-      <h1>  Wallets </h1>
-        <div class="row text-center">
-
-
-            <div class="col-12 col-md-4">
-                <div class="container1">
-                    <h3 class="res-h1"><span>Crypto Wallets</span> </h3>
-                    <ul class="res-ul">
-                        {% for i in c_wallets %}
-                        <a>
-                            <li> {{i.name}} </li>
-                        </a>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="container1">
-                    <h3 class="res-h1">Hardware Wallets </h3>
-                    <ul class="res-ul">
-                        {% for i in h_wallets %}
-                        <a>
-                            <li> {{i.name}} </li>
-                        </a>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="container1">
-                    <h3 class="res-h1">Crypto Exchange </h3>
-                    <ul class="res-ul">
-                        {% for i in c_exchanges %}
-                        <a>
-                            <li> {{i.name}} </li>
-                        </a>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
+            <div id="resource-head" class="text-center pt-4 mb-3">
+                <h1>Cryptocurrency Resources</h1>
+                <p class="float-left bit-img-cls"><img class="bitcoin-img" src="{% static '/img/news/bitcoin.png' %}"></p>
+                <p>Let me help you save your precious time. I've been actively collecting and researching the best cryptocurrency sites for the last few years. From my 9-year crypto involvement, I know that finding the most valuable crypto links (sites)
+                    can be very difficult, and It doesn't matter if you are a day trader, miner, or just an experienced beginner, trying to start with cryptocurrencies. The best collection of crypto sites will remain 100% free-to-use and with zero ads.</p>
             </div>
 
 
 
-          <!-- ROW TWO-->
-          <h1>Altcoins and Bitcoins</h1>
-             <div class="row text-center">
 
-
-            <div class="col-12 col-md-4">
-                <div class="container1">
-                    <h3 class="res-h1">Crypto Gambling </h3>
-                    <ul class="res-ul">
-                        {% for i in c_gambling %}
-                        <a>
-                            <li> {{i.name}} </li>
-                        </a>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-
-
-            <div class="col-12 col-md-4">
-                <div class="container1">
-                    <h3 class="res-h1">Crypto Forums </h3>
-                    <ul class="res-ul">
-                        {% for i in c_forums %}
-                        <a>
-                            <li> {{i.name}} </li>
-                        </a>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-
-
-            <div class="col-12 col-md-4">
-                <div class="container1">
-                    <h3 class="res-h1">Reddit Cryptocurrency  </h3><!--(Leverage Trading) -->
-                    <ul class="res-ul">
-                        {% for i in l_trading %}
-                        <a>
-                            <li> {{i.name}} </li>
-                        </a>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            </div>
-
-
-
-          <!--ROW THREE-->
-            <h1> Mining</h1><br>
+            <!--ROW ONE-->
+            <h1 class="trending-tittle ml-4"> <strong>Wallets</strong> </h1>
             <div class="row text-center">
 
-            <div class="col-12 col-md-4">
-                <div class="container1">
-                    <h3 class="res-h1">Mining Softwares </h3>
-                    <ul class="res-ul">
-                        {% for i in b_mining_software %}
-                        <a>
-                            <li> {{i.name}} </li>
-                        </a>
-                        {% endfor %}
-                    </ul>
+
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1"><span>Crypto Wallets</span> </h3>
+                        <ul class="res-ul">
+                            {% for i in c_wallets %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Hardware Wallets </h3>
+                        <ul class="res-ul">
+                            {% for i in h_wallets %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Crypto Exchange </h3>
+                        <ul class="res-ul">
+                            {% for i in c_exchanges %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
 
 
-            <div class="col-12 col-md-4">
-                <div class="container1">
-                    <h3 class="res-h1">Mining Pools </h3>
-                    <ul class="res-ul">
-                        {% for i in m_pools %}
-                        <a>
-                            <li> {{i.name}} </li>
-                        </a>
-                        {% endfor %}
-                    </ul>
+
+            <!-- ROW TWO-->
+            <h1 class="trending-tittle ml-4"><strong>Altcoins and Bitcoins</strong></h1>
+            <div class="row text-center">
+
+
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Cryptocurrency News </h3>
+                        <ul class="res-ul">
+                            {% for i in c_news %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Crypto Forums </h3>
+                        <ul class="res-ul">
+                            {% for i in c_forums %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Reddit Cryptocurrency </h3>
+                        <ul class="res-ul">
+                            {% for i in r_cryptocurrency %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
 
 
-            <div class="col-12 col-md-4">
-                <div class="container1">
-                    <h3 class="res-h1">Coin Tracking </h3>
-                    <ul class="res-ul">
-                        {% for i in c_tracking %}
-                        <a>
-                            <li> {{i.name}} </li>
-                        </a>
-                        {% endfor %}
-                    </ul>
+
+            <!--ROW THREE-->
+            <h1 class="trending-tittle ml-4"><strong>Mining</strong></h1><br>
+            <div class="row text-center">
+
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Mining Softwares </h3>
+                        <ul class="res-ul">
+                            {% for i in b_mining_software %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Mining Pools </h3>
+                        <ul class="res-ul">
+                            {% for i in m_pools %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--ROW FOUR-->
+            <h1 class="trending-tittle ml-4"><strong>Altcoins (ICO & More)</strong> </h1>
+            <div class="row text-center">
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Upcoming ICO </h3>
+                        <ul class="res-ul">
+                            {% for i in u_ico %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Airdrops </h3>
+                        <ul class="res-ul">
+                            {% for i in airdrops %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Crypto Calender</h3>
+                        <ul class="res-ul">
+                            {% for i in c_calender %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
-            </div>
 
-             <!--ROW FOUR-->
-             <h1> Something else</h1>
-             <div class="row text-center">
-
-
-            <div class="col-12 col-md-4">
-                <div class="container1">
-                    <h3 class="res-h1">Charting </h3>
-                    <ul class="res-ul">
-                        {% for i in charting %}
-                        <a>
-                            <li> {{i.name}} </li>
-                        </a>
-                        {% endfor %}
-                    </ul>
+            <!--ROW FIVE-->
+            <h1 class="trending-tittle ml-4"><strong>Charting and Gambling </strong></h1>
+            <div class="row text-center">
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Charting </h3>
+                        <ul class="res-ul">
+                            {% for i in charting %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="col-12 col-md-4">
-                <div class="container1">
-                    <h3 class="res-h1">Upcoming ICO </h3>
-                    <ul class="res-ul">
-                        {% for i in u_ico %}
-                        <a>
-                            <li> {{i.name}} </li>
-                        </a>
-                        {% endfor %}
-                    </ul>
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Crypto Gambling </h3>
+                        <ul class="res-ul">
+                            {% for i in c_gambling %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="col-12 col-md-4">
-                <div class="container1">
-                    <h3 class="res-h1">Airdrops </h3>
-                    <ul class="res-ul">
-                        {% for i in airdrops %}
-                        <a>
-                            <li> {{i.name}} </li>
-                        </a>
-                        {% endfor %}
-                    </ul>
+                <div class="col-12 col-md-4">
+                    <div class="container1">
+                        <h3 class="res-h1">Coin Tracking</h3>
+                        <ul class="res-ul">
+                            {% for i in c_tracking %}
+                            <a href="{{i.link}}" target="_blank">
+                                <li class="text-dark"> {{i.name}} </li>
+                            </a>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
+
+
+
             </div>
-          </div>
-              </div>
+        </div>
     </div>
 </div>
 
