@@ -10,10 +10,9 @@
 
 
             <div id="resource-head" class="text-center pt-4 mb-3">
-                <h1>Cryptocurrency Resources</h1>
+                <h1></h1>
                 <p class="float-left bit-img-cls"><img class="bitcoin-img" src="{% static '/img/news/bitcoin.png' %}"></p>
-                <p>Let me help you save your precious time. I've been actively collecting and researching the best cryptocurrency sites for the last few years. From my 9-year crypto involvement, I know that finding the most valuable crypto links (sites)
-                    can be very difficult, and It doesn't matter if you are a day trader, miner, or just an experienced beginner, trying to start with cryptocurrencies. The best collection of crypto sites will remain 100% free-to-use and with zero ads.</p>
+                <p>Cryptocurrencies are Digital money and a revolutionary system in the world of finance . We have provided a collection of top resources from the world of cryptocurrency , ICOs , wallets , tokens and blockchains . Use these resources to have a grasp of the system before you store significant amount of value in it .</p>
             </div>
 
 
@@ -27,7 +26,7 @@
                 <div class="col-12 col-md-4">
                     <div class="container1">
                         <h3 class="res-h1"><span>Crypto Wallets</span> </h3>
-                        <ul class="res-ul">
+                        <ul class="res-ul"><p>Everything you need to know about the key web-based wallets</p>
                             {% for i in c_wallets %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -41,6 +40,7 @@
                     <div class="container1">
                         <h3 class="res-h1">Hardware Wallets </h3>
                         <ul class="res-ul">
+                          <p>Considered the gold standard of security, we review the top hardware devices</p>
                             {% for i in h_wallets %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -54,6 +54,7 @@
                     <div class="container1">
                         <h3 class="res-h1">Crypto Exchange </h3>
                         <ul class="res-ul">
+                          <p>Easily discern and see developments in different blockchain fees</p>
                             {% for i in c_exchanges %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -75,6 +76,7 @@
                     <div class="container1">
                         <h3 class="res-h1">Cryptocurrency News </h3>
                         <ul class="res-ul">
+                         <p>The top resources to stay up to date with cryptocurrency developments</p>
                             {% for i in c_news %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -88,7 +90,7 @@
                 <div class="col-12 col-md-4">
                     <div class="container1">
                         <h3 class="res-h1">Crypto Forums </h3>
-                        <ul class="res-ul">
+                        <ul class="res-ul"><p>Have your voice heard and contribute to these key cryptocurrency forums</p>
                             {% for i in c_forums %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -102,7 +104,7 @@
                 <div class="col-12 col-md-4">
                     <div class="container1">
                         <h3 class="res-h1">Reddit Cryptocurrency </h3>
-                        <ul class="res-ul">
+                        <ul class="res-ul"><p>From Bitcoin to Blockchain, there’s a subreddit for every crypto community</p>
                             {% for i in r_cryptocurrency %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -122,7 +124,7 @@
                 <div class="col-12 col-md-4">
                     <div class="container1">
                         <h3 class="res-h1">Mining Softwares </h3>
-                        <ul class="res-ul">
+                        <ul class="res-ul"><p>Buy and sell hash power at a rate which suits you</p>
                             {% for i in b_mining_software %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -136,7 +138,7 @@
                 <div class="col-12 col-md-4">
                     <div class="container1">
                         <h3 class="res-h1">Mining Pools </h3>
-                        <ul class="res-ul">
+                        <ul class="res-ul"><p>Pool hash power with the biggest players like Bitmain</p>
                             {% for i in m_pools %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -156,6 +158,7 @@
                     <div class="container1">
                         <h3 class="res-h1">Upcoming ICO </h3>
                         <ul class="res-ul">
+                          <p>Have no woes, we’ve already researched upcoming ICO’s</p>
                             {% for i in u_ico %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -170,6 +173,7 @@
                     <div class="container1">
                         <h3 class="res-h1">Airdrops </h3>
                         <ul class="res-ul">
+                          <p>Capitalise on crypto airdrops by getting tokens pre-ICO</p>
                             {% for i in airdrops %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -184,6 +188,7 @@
                     <div class="container1">
                         <h3 class="res-h1">Crypto Calender</h3>
                         <ul class="res-ul">
+                          <p>Calendars covering all the key cryptocurrency and ICO events</p>
                             {% for i in c_calender %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -201,6 +206,7 @@
                     <div class="container1">
                         <h3 class="res-h1">Charting </h3>
                         <ul class="res-ul">
+                          <p>Get the latest data and charts to assist your analysis</p>
                             {% for i in charting %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -215,6 +221,7 @@
                     <div class="container1">
                         <h3 class="res-h1">Crypto Gambling </h3>
                         <ul class="res-ul">
+                          <p>From roulette to sports betting, wager your cryptocurrency to win cryptocurrency</p>
                             {% for i in c_gambling %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
@@ -229,6 +236,7 @@
                     <div class="container1">
                         <h3 class="res-h1">Coin Tracking</h3>
                         <ul class="res-ul">
+                          <p>Always analyze and monitor price with these tasty trackers</p>
                             {% for i in c_tracking %}
                             <a href="{{i.link}}" target="_blank">
                                 <li class="text-dark"> {{i.name}} </li>
